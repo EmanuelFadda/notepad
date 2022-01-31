@@ -6,9 +6,7 @@
             <div class="col pl-0"><hr></div>
         </div>
         <Contenuto/>
-        <div style="position:fixed;bottom:20px;right:20px;border-radius: 15px; min-width: 50px; min-height: 50px; background-color: rgba(121, 153, 217, 0.9);" id="pulsanteAggiungi" class="p-2">
-            <a href="schermataAggiungi.html"><img width="50px" height="50px" src="img/add_black_24dp.svg"></a>
-        </div>
+        <PulsanteAggiungi/>
     </div>
 </template>
 
@@ -22,11 +20,12 @@
 </style>
 
 <script>
-import Contenuto from 'Contenuto.vue'
+import Contenuto from './Contenuto.vue'
+import PulsanteAggiungi from './PulsanteAggiungi.vue'
 export default {
-  name: 'SchermataIniziale',
-  component:{
-      Contenuto
+  components:{
+    Contenuto,
+    PulsanteAggiungi
   }
 }
 </script>
