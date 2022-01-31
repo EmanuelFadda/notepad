@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container py-2">
         <div id="form" style="min-height:800px; background-color: #AAFEC7; border-radius: 20px;" class="container px-3 py-3 my-0 border-0">
             <div class="row md-2">
                 <router-link to="/" class="col-2 text-center" style="border-right: 1px solid #0C5959;" href="schermataIniziale.html">

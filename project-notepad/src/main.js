@@ -6,7 +6,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import SchermataIniziale from './components/SchermataIniziale'
 import SchermataAggiungi from './components/SchermataAggiungi'
-
+import SchermataModifica from './components/SchermataModifica'
 Vue.use(VueRouter);
 Vue.config.productionTip = false
 
@@ -18,6 +18,10 @@ const routes=[
   {
     path: '/SchermataAggiungi',
     component: SchermataAggiungi,
+  },
+  {
+    path: '/SchermataModifica',
+    component: SchermataModifica
   }
 ];
 
