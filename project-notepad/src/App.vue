@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/image/add_black_24dp.svg">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SchermataIniziale/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SchermataIniziale from './components/SchermataIniziale.vue' //importare il component che si intende usare all'interno del component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SchermataIniziale    //se metti qualsiasi component dentro a un components segui sintassi da linea 11 fino a 16
   }
 }
 </script>
@@ -19,11 +18,6 @@ export default {
 <style lang="scss">
 @import "~@/assets/scss/vendors/bootstrap-vue/index";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #124141;
 }
 </style>
