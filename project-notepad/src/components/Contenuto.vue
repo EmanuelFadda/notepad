@@ -1,5 +1,5 @@
 <template>
-     <div id="contenuto" style="min-height:800px; background-color: #D7FCCC; border-radius: 20px;" class="container px-3 py-3">
+     <div id="contenuto" style="height:99vh; background-color: #D7FCCC; border-radius: 20px;" class="container px-3 py-3">
          <div v-if="!1>0">
              <Vuoto/>
          </div>
