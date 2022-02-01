@@ -1,6 +1,6 @@
 <template>
-    <div class="container py-2">
-        <div id="form" style="min-height:800px; background-color: #AAFEC7; border-radius: 20px;" class="container px-3 py-3 my-0 border-0">
+    <div class="container py-2" style="height:100%;width:100%">
+        <div id="form" style="height:100%;background-color: #AAFEC7; border-radius: 20px;" class="container px-3 py-3 my-0 border-0">
             <div class="row md-2">
                 <router-link to="/" class="col-2 text-center" style="border-right: 1px solid #0C5959;" href="schermataIniziale.html">
                     <img src="../assets/image/arrow_back_black_24dp.svg">
@@ -12,9 +12,9 @@
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title">
             </div>
-            <div class="form-group my-3">
+            <div style="height:65%" class="form-group my-3">
                 <label for="text">Text</label>
-                <textarea class="form-control" style="min-height: 500px;" id="text"></textarea>
+                <textarea style="height:90%" class="form-control"  id="text"></textarea>
             </div>
             <br>
             <a href="schermataIniziale2.html" style="text-decoration:none;color: #0C5959;">
