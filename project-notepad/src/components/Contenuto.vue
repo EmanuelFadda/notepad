@@ -1,5 +1,5 @@
 <template>
-     <div id="contenuto" style="height:95%;background-color: #D7FCCC; border-radius: 20px;" class="container px-3 py-3">
+     <div id="contenuto" class="container px-3 py-3">
          <div v-if="!1>0">
              <Vuoto/>
          </div>
@@ -21,3 +21,12 @@ export default{
     }
 }
 </script>
+
+<style scoped>
+    #contenuto{
+        height:95%;
+        background-color: #D7FCCC; 
+        border-radius: 20px;
+    }
+
+</style>
