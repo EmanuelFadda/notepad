@@ -23,10 +23,12 @@ export default{
 </script>
 
 <style scoped>
+
     #contenuto{
         height:95%;
         background-color: #D7FCCC; 
         border-radius: 20px;
+        overflow: scroll;
     }
 
 </style>

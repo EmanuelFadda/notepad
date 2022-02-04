@@ -66,11 +66,10 @@
     }
     #deleteDiv{
         border-radius: 15px;
-        background-color: rgba(255, 0, 0, 0.6);
+        background-color: rgba(255, 0, 0);
     }
     #deleteImage{
         border-radius: 15px;
-        background-color: rgba(255, 0, 0, 0.6);
         width:50px;
     }
     #doneDiv{
