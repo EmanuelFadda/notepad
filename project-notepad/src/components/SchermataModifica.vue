@@ -6,12 +6,12 @@
                     <img src="../assets/image/arrow_back_black_24dp.svg">
                 </router-link>
                 <div id="titleDiv" class="col">
-                    <input id="title" type="text" value="title">
+                    <input id="title" type="text" :value="this.title">
                 </div>
             </div>
             <div id="textDiv" class="form-group my-3">
                 <label for="text">Text</label>
-                <textarea class="form-control" id="text"></textarea>
+                <textarea :value="this.text" class="form-control" id="text"></textarea>
             </div>
             <div id="buttonDownload" v-on:click="startDownload()" class="container p-2 text-center my-3">
                 save on .txt file
@@ -84,6 +84,10 @@
 <script>
 
 export default({
+    props:{
+        titolo: String,
+        text: String
+    },
     methods: 
         {
             startDownload: function() {
@@ -106,5 +110,4 @@ export default({
         
 
 })
-
 </script>

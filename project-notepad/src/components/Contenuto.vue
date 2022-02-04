@@ -30,7 +30,7 @@ export default{
     ::-webkit-scrollbar-thumb {
         background: rgba(12, 89, 89, 0.5); 
         border-radius: 10px;
-        height: 40px;
+        
     }
     ::-webkit-scrollbar-track-piece:end {
         background: transparent;

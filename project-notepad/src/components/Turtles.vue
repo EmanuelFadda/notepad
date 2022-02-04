@@ -1,11 +1,23 @@
 <template>
-    <router-link id="turtleLink" class="" to="/SchermataModifica">
+    <router-link :to="{path:'/SchermataModifica', params:{title:title,text:text}} " id="turtleLink" class="">
         <fieldset id="turtle" class="shadow-sm container py-2 px-3">
-            <legend>titolo</legend>
-            <p><b>testo</b></p>
+            <legend>{{title}}</legend>
+            <p><b>{{text}}</b></p>
         </fieldset>
     </router-link>
 </template>
+
+<script>
+
+export default {
+    props:{
+        title:String,
+        text:String
+    }
+
+    
+}
+</script>
 
 <style scoped>
     #turtleLink{
@@ -17,5 +29,7 @@
         border-radius: 15px;
         background-color:rgba(12, 89, 89, 0.2);
         color:#0C5959;
+        overflow-x:hidden ;
     }
+
 </style>

@@ -13,7 +13,7 @@
         border-radius: 15px;
         min-width: 50px;
         min-height: 50px;
-        background-color: rgba(121, 153, 217, 0.9);
+        background-color: rgba(121, 153, 217, 0.7);
     }
     #imageAdd{
         width:50px; 
