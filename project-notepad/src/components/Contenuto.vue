@@ -23,12 +23,31 @@ export default{
 </script>
 
 <style scoped>
+    ::-webkit-scrollbar{
+        width: 6px;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(12, 89, 89, 0.5); 
+        border-radius: 10px;
+        height: 40px;
+    }
+    ::-webkit-scrollbar-track-piece:end {
+        background: transparent;
+        margin-bottom: 10px; 
+    }
 
+    ::-webkit-scrollbar-track-piece:start {
+        background: transparent;
+        margin-top: 10px;
+    }
+    
     #contenuto{
         height:95%;
         background-color: #D7FCCC; 
         border-radius: 20px;
-        overflow: scroll;
+        overflow-y: scroll ;
+        
     }
 
 </style>

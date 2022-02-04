@@ -3,7 +3,9 @@
         <Turtles v-for="turtle in turtles" :key="turtle"/>
     </div>
 </template>
+<style scoped>
 
+</style>
 <script>
 import Turtles from './Turtles.vue'
 
@@ -13,10 +15,46 @@ export default{
     },
     data(){
         return{
-        turtles:[
+            turtles:[
             {
                 title: 'a',
                 text: 'a',
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
+            },
+            {
+                title:'b',
+                text:'b'
             },
             {
                 title:'b',
