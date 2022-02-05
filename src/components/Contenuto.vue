@@ -25,7 +25,6 @@ export default{
 <style scoped>
     ::-webkit-scrollbar{
         width: 6px;
-        
     }
     ::-webkit-scrollbar-thumb {
         background: rgba(12, 89, 89, 0.5); 
@@ -33,12 +32,11 @@ export default{
         
     }
     ::-webkit-scrollbar-track-piece:end {
-        background: transparent;
+        
         margin-bottom: 10px; 
     }
 
     ::-webkit-scrollbar-track-piece:start {
-        background: transparent;
         margin-top: 10px;
     }
     
