@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="{path:'/SchermataModifica', params:{title:this.title,text:text}} " id="turtleLink" class="">
+    <router-link :to="{name:'SchermataModifica', params:{title:title, text:text}} " id="turtleLink" class="">
         <fieldset id="turtle" class="shadow-sm container py-2 px-3">
             <legend>{{title}}</legend>
             <p><b>{{text}}</b></p>

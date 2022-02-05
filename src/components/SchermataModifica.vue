@@ -15,9 +15,7 @@
             </div>
             <div id="buttonDownload" v-on:click="startDownload()" class="container p-2 text-center my-3">
                 save on .txt file
-            </div><br>
-            <p> {{ title }} {{text}}</p>
-            <br>
+            </div>
             <div class="row">
                 <div id="deleteDiv" class="container col text-center mx-2">
                     <a href="schermataIniziale.html">
@@ -37,7 +35,9 @@
 <style scoped>
     #schermataModifica{
         width:100%;
-        height:100%
+        height:100%;
+        overflow-y: scroll ;
+        overflow-x: hidden ;
     }
     #form{
         width:100%;height:100%; 
@@ -86,6 +86,7 @@
 <script>
 
 export default{
+    name: 'SchermataModifica',
     props: {
         title: String,
         text: String

@@ -22,10 +22,10 @@ const routes=[
     
   },
   {
-    path: '/SchermataModifica',
-    component: SchermataModifica,
+    path: '/:title',
     name: 'SchermataModifica',
-    props:true
+    component: SchermataModifica,
+    props: true
     
   }
 ];
