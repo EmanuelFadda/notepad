@@ -14,14 +14,19 @@ const routes=[
   {
     path: '/',
     component: SchermataIniziale,
+    
   },
   {
     path: '/SchermataAggiungi',
     component: SchermataAggiungi,
+    
   },
   {
     path: '/SchermataModifica',
-    component: SchermataModifica
+    component: SchermataModifica,
+    name: 'SchermataModifica',
+    props:true
+    
   }
 ];
 

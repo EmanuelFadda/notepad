@@ -23,8 +23,8 @@ export default{
                 text: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
             },
             {
-                title:'b',
-                text:'b'
+                title:'genofevvo',
+                text:'baaakk'
             },
             {
                 title:'b',

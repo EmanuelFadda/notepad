@@ -47,7 +47,7 @@ export default{
         background-color: #D7FCCC; 
         border-radius: 20px;
         overflow-y: scroll ;
-        
+        direction: rtl;
     }
 
 </style>

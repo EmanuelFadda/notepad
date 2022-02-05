@@ -6,16 +6,18 @@
                     <img src="../assets/image/arrow_back_black_24dp.svg">
                 </router-link>
                 <div id="titleDiv" class="col">
-                    <input id="title" type="text" :value="this.title">
+                    <input id="title" type="text" :value="title">
                 </div>
             </div>
             <div id="textDiv" class="form-group my-3">
                 <label for="text">Text</label>
-                <textarea :value="this.text" class="form-control" id="text"></textarea>
+                <textarea :value="text" class="form-control" id="text"></textarea>
             </div>
             <div id="buttonDownload" v-on:click="startDownload()" class="container p-2 text-center my-3">
                 save on .txt file
-            </div>
+            </div><br>
+            <p> {{ title }} {{text}}</p>
+            <br>
             <div class="row">
                 <div id="deleteDiv" class="container col text-center mx-2">
                     <a href="schermataIniziale.html">
@@ -83,9 +85,9 @@
 
 <script>
 
-export default({
-    props:{
-        titolo: String,
+export default{
+    props: {
+        title: String,
         text: String
     },
     methods: 
@@ -101,13 +103,6 @@ export default({
                 element.click();
                 document.body.removeChild(element);
             },
-
-
         },
-
-
-
-        
-
-})
+}
 </script>
