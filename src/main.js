@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import SchermataIniziale from './components/SchermataIniziale'
 import SchermataAggiungi from './components/SchermataAggiungi'
 import SchermataModifica from './components/SchermataModifica'
+import './script'
 Vue.use(VueRouter);
 Vue.config.productionTip = false
 

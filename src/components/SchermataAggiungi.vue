@@ -16,17 +16,41 @@
                 <label for="text">Text</label>
                 <textarea class="form-control" id="text"/>
             </div>
-            <br>
-            <a href="schermataIniziale2.html" id="saveLink">
-                <div class="container text-center p-3">
-                    <h5>Save :)</h5>
-                </div>
-            </a>
+            <br>        
+            <div id="saveDiv" @click="saveDivMethods" class="container text-center p-3">
+                <h5>Save :)</h5>
+            </div>
         </div>
     </div>
 </template>
+<script>
+import script from '../script'
+
+export default {
+    methods: {
+        saveDivMethods: function(){
+            let title= document.getElementById('title').value
+            let text=document.getElementById('text').value
+            let isTurtleComplete=(title!="" && text!="")
+            if(isTurtleComplete){
+                script.addTurtle(title,text)
+                this.$router.go(-1)
+            }
+        }
+    },
+
+    
+}
+
+
+
+</script>
 
 <style scoped>
+
+
+
+
     #all{
         height:100%;
         width:100%;
@@ -45,12 +69,10 @@
     #text{
         height:90%;
     }
-    #saveLink{
-        text-decoration:none;
+    #saveDiv{
         color: #0C5959;
-    }
-    #saveLink div{
         border-radius:15px;
         background-color: rgba(121, 153, 217, 0.5);
     }
+
 </style>
