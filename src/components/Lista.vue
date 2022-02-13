@@ -20,7 +20,7 @@ export default{
             turtles:[
             {
                 title: 'aaa',
-                text: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+                text: 'aaaaaaaaaaaaaaaaaaaa',
             },
             {
                 title:'genofevvo',
@@ -42,50 +42,6 @@ export default{
                 title:'b',
                 text:'b'
             },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            }
         ]
         }
 

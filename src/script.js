@@ -1,13 +1,17 @@
 export default{
     addTurtle: function (title,text){
-        let key=localStorage.length;
+        if (localStorage.getItem("turtle")==undefined){
+            let list=[]
+            localStorage.setItem(turtle,list)
+        }
+        let key= localStorage.getItem('turtle').length
         let turtle={
             title:title,
             text: text
         }
-        localStorage.setItem(key++,JSON.stringify(turtle));
+        localStorage.getItem('turtle')[key]=JSON.stringify(turtle);
     },
-
+    //fare in modo che si possa creare una struttura dati con la chiave "turtle" che mi permetta l'immagazzinamento di tutte le turtle
 }
 /*
  deleteTurtle: function(keyOfTurtle){

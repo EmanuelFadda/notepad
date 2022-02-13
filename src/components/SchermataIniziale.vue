@@ -2,7 +2,10 @@
     <div id="schermataIniziale" class="container py-2">
         <div class="row" id="scritte">
             <div class="col-1 pr-0"><hr></div>
-            <div class="col-auto py-1"><h6>there's x turtles</h6></div>
+            <div class="col-auto py-1">
+                <h6 v-if="numberTurtle>0">there's {{numberTurtle}} turtles</h6>
+                <h6 v-else>there's no turtle</h6>
+            </div>
             <div class="col pl-0"><hr></div>
         </div>
         <Contenuto/>
@@ -33,6 +36,12 @@ export default {
   components:{
     Contenuto,
     PulsanteAggiungi
+  },
+  data(){
+      return{
+          numberTurtle: localStorage.turtle.length
+    }
+
   }
 }
 </script>
