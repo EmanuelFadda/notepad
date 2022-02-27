@@ -17,36 +17,10 @@ export default{
     },
     data(){
         return{
-            turtles:[
-            {
-                title: 'aaa',
-                text: 'aaaaaaaaaaaaaaaaaaaa',
-            },
-            {
-                title:'genofevvo',
-                text:'baaakk'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-            {
-                title:'b',
-                text:'b'
-            },
-        ]
+             
         }
-
-
     },
+
 }
 
 

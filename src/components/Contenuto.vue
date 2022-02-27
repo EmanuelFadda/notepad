@@ -1,6 +1,6 @@
 <template>
      <div id="contenuto" class="container px-3 py-3">
-         <div v-if="isThereTurtle">
+         <div v-if="isEmpty">
              <Vuoto/>
          </div>
          <div v-else>
@@ -21,7 +21,7 @@ export default{
     },
     data(){
         return{
-            isThereTurtle: (localStorage.getItem('turtle')!=null)
+            isEmpty: localStorage.getItem(1)===null
         }
         
     }

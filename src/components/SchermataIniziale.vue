@@ -3,7 +3,7 @@
         <div class="row" id="scritte">
             <div class="col-1 pr-0"><hr></div>
             <div class="col-auto py-1">
-                <h6 v-if="numberTurtle>0">there's {{numberTurtle}} turtles</h6>
+                <h6 v-if="isEmpty!=true">there's {{numberTurtle}} turtles</h6>
                 <h6 v-else>there's no turtle</h6>
             </div>
             <div class="col pl-0"><hr></div>
@@ -39,7 +39,8 @@ export default {
   },
   data(){
       return{
-          numberTurtle: localStorage.turtle.length
+          isEmpty: localStorage.getItem(1)===null,
+          numberTurtle:localStorage.length-1
     }
 
   }
