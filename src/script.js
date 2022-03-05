@@ -6,7 +6,15 @@ export default{
         }
         localStorage.setItem(localStorage.length,JSON.stringify(turtle))
     },
-    //fare in modo che si possa creare una struttura dati con la chiave "turtle" che mi permetta l'immagazzinamento di tutte le turtle
+    showAllTurtles(){
+        let allTurtles={}
+        for (let i=1;i<localStorage.length;i++){
+            let turtle=JSON.parse(localStorage.getItem(i))
+            allTurtles[i-1]=turtle;
+        }
+        return allTurtles
+    }
+
 }
 /*
  deleteTurtle: function(keyOfTurtle){

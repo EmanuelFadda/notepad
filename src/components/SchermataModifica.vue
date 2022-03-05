@@ -22,10 +22,8 @@
                         <img id="deleteImage" src="../assets/image/delete_white_24dp.svg">
                     </a>
                 </div>
-                <div id="doneDiv" class="container col text-center mx-2">
-                    <a href="schermataIniziale2.html">
-                        <img id="doneImage" src="../assets/image/done_white_24dp.svg">
-                    </a>
+                <div @click="updateTurtle()"  id="doneDiv" class="container col text-center mx-2">
+                    <img id="doneImage" src="../assets/image/done_white_24dp.svg">
                 </div>
             </div>
         </div>
@@ -83,26 +81,43 @@
 </style>
 
 <script>
-
+//import script from '../script'
 export default{
     name: 'SchermataModifica',
     props: {
         title: String,
-        text: String
+        text: String,
     },
     methods: 
         {
             startDownload: function() {
-                let text=document.getElementById('text').value;
-                let title=document.getElementById('title').value;
+                let textElementValue=document.getElementById('text').value;
+                let titleElementValue=document.getElementById('title').value;
                 var element = document.createElement('a');
-                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-                element.setAttribute('download', title);
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textElementValue));
+                element.setAttribute('download', titleElementValue);
                 element.style.display = 'none';
                 document.body.appendChild(element);
                 element.click();
                 document.body.removeChild(element);
             },
-        },
+            updateTurtle : function(){
+                let textElementValue=document.getElementById('text').value;
+                let titleElementValue=document.getElementById('title').value;
+                let turtleSelected=JSON.parse(localStorage.getItem(this.$vnode.key+1))
+                let turtle={
+                        title:titleElementValue,
+                        text:textElementValue
+                }
+                let isTheSameTurtle=(turtleSelected==turtle)
+                if(!isTheSameTurtle){
+                    alert(this.$vnode.key) //is undefined
+                    localStorage.setItem(this.$vnode.key+1,JSON.stringify(turtle))
+                    this.$router.go(-1)
+                }
+            }
+            
+        }
+        
 }
 </script>
